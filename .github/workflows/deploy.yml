@@ -28,7 +28,7 @@ jobs:
           cache: 'pnpm'
           
       - name: Instalar dependências
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
         
       - name: Rodar o build do Next.js
         run: pnpm run build
