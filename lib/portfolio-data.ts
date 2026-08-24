@@ -117,28 +117,28 @@ export const experiences = [
 // ============================================================================
 export const projects = [
   {
-    name: 'nome-do-projeto',
-    description: 'Descricao curta do que o projeto faz e qual problema resolve.',
-    tech: ['Python', 'SQL'],
-    repo: 'https://github.com/usuario/nome-do-projeto',
-    demo: '', // opcional, deixe vazio se nao houver
+    name: 'projeto-cache',
+    description: 'Sistema de caching desenvolvido em C.',
+    tech: ['C', 'Estrutura de Dados'],
+    repo: 'https://github.com/Eduardo-Bauer/projeto-cache',
     featured: true,
+    image: '/caminho/para/imagem1.png',
   },
   {
-    name: 'outro-projeto',
-    description: 'Descricao curta do projeto.',
-    tech: ['Java'],
-    repo: 'https://github.com/usuario/outro-projeto',
-    demo: '',
-    featured: false,
+    name: 'estudos-FastApi',
+    description: 'Web application Full-stack com FastAPI REST backend e React frontend para rastreamento de obras.',
+    tech: ['Python', 'FastAPI', 'React', 'SQLAlchemy'],
+    repo: 'https://github.com/Eduardo-Bauer/estudos-FastApi',
+    featured: true,
+    image: '/caminho/para/imagem2.jpg',
   },
   {
     name: 'projeto-em-c',
     description: 'Descricao curta do projeto.',
     tech: ['C'],
-    repo: 'https://github.com/usuario/projeto-em-c',
-    demo: '',
+    repo: 'https://github.com/Eduardo-Bauer/projeto-em-c',
     featured: false,
+    image: '',
   },
 ]
 
