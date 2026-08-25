@@ -49,17 +49,17 @@ export const otherSkills = [
 // ============================================================================
 export const education = [
   {
-    course: 'Nome do Curso / Graduacao',
-    institution: 'Nome da Instituicao',
-    period: '2022 — Atual',
-    description: 'Breve descricao do curso, area de foco ou principais disciplinas.',
+    course: 'Ciência da Computação',
+    institution: 'Universidade de Caxias do Sul (UCS)',
+    period: '2023 — 2029',
+    description: 'O objeto de estudo da área de Ciência da Computação envolve compreender o funcionamento dos computadores, do hardware ao software, procurando compreender como as informações são armazenadas e processadas no desenvolvimento de software e aplicativos.',
     status: 'Em andamento',
   },
   {
-    course: 'Curso Tecnico / Ensino Medio',
-    institution: 'Nome da Instituicao',
-    period: '2019 — 2021',
-    description: 'Breve descricao.',
+    course: 'Técnico em Agropecuária',
+    institution: 'Escola Técnica Bom Pastor',
+    period: '2020 — 2022',
+    description: 'Formar profissionais aptos a atuar em diferentes áreas do segmento agropecuário, com conhecimento abrangente em cultivo de plantas, criação de animais, gestão de recursos naturais, infraestrura agrícola, implementação de tecnologias sustentáveis, administração rural e desenvolvimento de projetos agropecuários.',
     status: 'Concluido',
   },
 ]
@@ -67,16 +67,34 @@ export const education = [
 // Cursos e certificacoes complementares.
 export const courses = [
   {
-    title: 'Nome do Curso Complementar',
-    provider: 'Plataforma / Instituicao',
-    year: '2023',
+    title: 'Git e Github',
+    provider: 'Udemy',
+    year: '2026',
+    hours: '12h',
+  },
+  {
+    title: 'Estrutura de Dados e Algoritmos',
+    provider: 'Udemy',
+    year: '2025',
+    hours: '8h',
+  },
+  {
+    title: 'Mysql',
+    provider: 'Curso em Vídeo',
+    year: '2024',
     hours: '40h',
   },
   {
-    title: 'Outro Curso ou Certificacao',
-    provider: 'Plataforma / Instituicao',
+    title: 'Python',
+    provider: 'Curso em Vídeo',
     year: '2024',
-    hours: '20h',
+    hours: '40h',
+  },
+  {
+    title: 'Cursos-Linguagem C',
+    provider: 'Universidade de Caxias do Sul (UCS)',
+    year: '2023',
+    hours: '15h',
   },
 ]
 
