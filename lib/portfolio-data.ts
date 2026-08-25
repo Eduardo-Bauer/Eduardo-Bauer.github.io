@@ -85,30 +85,31 @@ export const courses = [
 // ============================================================================
 export const experiences = [
   {
-    role: 'Cargo / Posição',
-    company: 'Nome da Empresa',
-    period: '2023 — Atual',
+    role: 'Suporte ao cliente',
+    company: 'SW Tecnologia',
+    period: '2025 — Atual',
     type: 'Tempo integral',
     description:
-      'Breve descrição das suas responsabilidades e do que você entrega no dia a dia.',
+      'Atendimento e resolução de problemas operacionais e técnicos de clientes. Minhas atividades combinam suporte direto ao usuário com análise aprofundada de dados, incluindo a execução de scripts e queries SQL para diagnóstico, extração de informações e correções pontuais em banco de dados, visando sempre a disponibilidade e a integridade das regras de negócio do sistema.',
     highlights: [
-      'Principal responsabilidade ou conquista nesta posição.',
-      'Outra entrega relevante, projeto ou impacto gerado.',
-      'Tecnologias e ferramentas que você utiliza aqui.',
+      'Suporte técnico.',
+      'Pensamento crítico.',
+      'Trabalho em equipe.',
+      'Documentação técnica.'
     ],
-    tech: ['Python', 'SQL'],
+    tech: ['SQL', 'Delphi'],
   },
   {
-    role: 'Cargo Anterior',
-    company: 'Outra Empresa',
-    period: '2021 — 2023',
+    role: 'Estagiário',
+    company: 'Prefeitura de Nova Petrópolis',
+    period: '2023 — 2025',
     type: 'Estágio',
-    description: 'Breve descrição das suas responsabilidades nessa experiência.',
+    description: 'Atendimento ao público na secretaria de planejamento, desenvolvi os projetos AutomacaoCredencial e web scraper proprietario car durante o meu período de estágio.',
     highlights: [
-      'Principal responsabilidade ou conquista.',
-      'Outra entrega ou aprendizado relevante.',
+      'Atendimento ao cliente.',
+      'Comunicação.',
     ],
-    tech: ['Delphi', 'C'],
+    tech: ['Python', 'Tkinter', 'Pandas', 'Docx'],
   },
 ]
 

@@ -12,7 +12,6 @@ export default function ExperienciasPage() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
       <PageHeader
-        command="cat experiencias.log"
         title="Experiências profissionais"
         description="Minha trajetória profissional, responsabilidades e principais entregas em cada posição."
       />
