@@ -14,12 +14,10 @@ export default function HabilidadesPage() {
         description="Linguagens, tecnologias e competências."
       />
 
-      {/* CORREÇÃO 1: Trocado '-mt-12' por 'mt-12' para empurrar a seção para BAIXO, afastando do PageHeader */}
       <div className="mt-12 grid grid-cols-1 items-start gap-12 md:grid-cols-[1fr_auto_1fr] md:gap-8 lg:gap-8">
         
         {/* Coluna Esquerda: Tecnologias e Ferramentas */}
         <section className="flex w-full flex-col items-center md:items-start">
-          {/* CORREÇÃO 2: Alterado de 'mb-8' para 'mb-5' para aproximar o texto dos ícones */}
           <h2 className="mb-5 w-full text-center text-xl font-bold leading-tight md:min-h-[3.5rem] md:text-left">
             Tecnologias e Ferramentas
           </h2>
@@ -27,9 +25,7 @@ export default function HabilidadesPage() {
           {/* Grid de Cards Quadrados */}
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
             {skills.map((skill) => {
-              const iconFileName = skill.name.toLowerCase().replace(/\s+/g, '') + '.svg';
-              const iconPath = `/icons/${iconFileName}`;
-
+              // REMOVIDO A LÓGICA ANTIGA E SUBSTITUÍDA PELA PROPRIEDADE DIRETA
               return (
                 <div
                   key={skill.name}
@@ -37,10 +33,11 @@ export default function HabilidadesPage() {
                 >
                   <div className="relative mb-2 h-10 w-10">
                     <Image 
-                      src={iconPath} 
+                      src={skill.icon} // PUXA O CAMINHO EXATO DO ARQUIVO DE DADOS
                       alt={`Ícone do ${skill.name}`} 
                       fill
                       className="object-contain"
+                      unoptimized // <--- MUITO IMPORTANTE PARA FUNCIONAR NO GITHUB PAGES
                     />
                   </div>
                   <span className="text-center text-sm font-semibold mt-1">{skill.name}</span>
@@ -56,7 +53,6 @@ export default function HabilidadesPage() {
         {/* Coluna Direita: Competências e Soft-Skills */}
         <section className="flex w-full flex-col items-center md:items-start">
           
-          {/* CORREÇÃO 2: Alterado de 'mb-8' para 'mb-5' para aproximar o texto da lista */}
           <h2 className="mb-5 w-full text-center text-xl font-bold leading-tight md:min-h-[3.5rem] md:text-left">
             Soft-Skills
           </h2>

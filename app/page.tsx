@@ -99,8 +99,7 @@ export default function HomePage() {
         </div>
         <ul className="mt-6 flex flex-wrap gap-4">
           {skills.slice(0, 3).map((s) => {
-            const iconFileName = s.name.toLowerCase().replace(/\s+/g, '') + '.svg';
-            const iconPath = `/icons/${iconFileName}`;
+            // Lógica antiga (toLowerCase) removida daqui
 
             return (
               <li
@@ -109,10 +108,11 @@ export default function HomePage() {
               >
                 <div className="relative h-5 w-5">
                   <Image 
-                    src={iconPath} 
+                    src={s.icon} // Puxando direto do arquivo de dados
                     alt={`Ícone do ${s.name}`}
                     fill
                     className="object-contain"
+                    unoptimized // Importante para o GitHub Pages
                   />
                 </div>
                 <span>{s.name}</span>

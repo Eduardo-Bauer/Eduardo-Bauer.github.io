@@ -27,15 +27,14 @@ export const social = {
 
 // Linguagens / tecnologias principais. level de 0 a 100.
 export const skills = [
-  { name: 'C'},
-  { name: 'Python'},
-  { name: 'Java'},
-  { name: 'SQL'},
-  { name: 'Git'},
-  { name: 'GitHub'},
-  { name: 'Delphi'},
+  { name: 'C', icon: '/icons/C.svg' },
+  { name: 'Python', icon: '/icons/Python.svg' },
+  { name: 'Java', icon: '/icons/Java.svg' },
+  { name: 'SQL', icon: '/icons/Sql.svg' }, // Note que na sua imagem está Sql.svg (apenas o S maiúsculo)
+  { name: 'Git', icon: '/icons/Git.svg' },
+  { name: 'GitHub', icon: '/icons/GitHub.svg' },
+  { name: 'Delphi', icon: '/icons/Delphi.svg' },
 ]
-
 // Habilidades complementares (tags simples).
 export const otherSkills = [
   'Comunicação',
