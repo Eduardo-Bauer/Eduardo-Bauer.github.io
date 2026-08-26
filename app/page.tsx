@@ -55,10 +55,10 @@ export default function HomePage() {
             </p>
             <p className="pl-4 text-muted-foreground">
               stack: [
-              {skills.map((s, i) => (
+              {skills.slice(0, 3).map((s, i, arr) => (
                 <span key={s.name}>
                   <span className="text-primary/90">'{s.name}'</span>
-                  {i < skills.length - 1 ? ', ' : ''}
+                  {i < arr.length - 1 ? ', ' : ''}
                 </span>
               ))}
               ],
@@ -99,7 +99,6 @@ export default function HomePage() {
         </div>
         <ul className="mt-6 flex flex-wrap gap-4">
           {skills.slice(0, 3).map((s) => {
-            // Mesma lógica da HabilidadesPage
             const iconFileName = s.name.toLowerCase().replace(/\s+/g, '') + '.svg';
             const iconPath = `/icons/${iconFileName}`;
 

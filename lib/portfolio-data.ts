@@ -9,7 +9,7 @@ export const profile = {
     'Gosto de resolver problemas na camada que ninguém vê: lógica, dados e desempenho.',
   location: 'Brasil',
   about: [
-    'Programo em C, Python, Delphi e Java, com conhecimento em SQL e modelagem de dados.',
+    'Programo em C, Python e Java, com conhecimento em SQL e modelagem de dados.',
     'Busco escrever código limpo, otimizar processos e construir sistemas confiáveis e fáceis de manter.',
     'Técnologia é minha paixão e sempre estou de olhos abertos para o futuro.',
   ],
