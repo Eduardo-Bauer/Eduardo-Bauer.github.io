@@ -12,10 +12,9 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Eduardo Bauer — Desenvolvedor Back-end',
+  title: 'Eduardo Bauer — Portfólio',
   description:
-    'Portfolio de Eduardo Bauer, desenvolvedor back-end especializado em C, Python, Delphi, Java e SQL.',
-  generator: 'v0.app',
+    'Portfolio de Eduardo Bauer, desenvolvedor back-end.',
 }
 
 export const viewport: Viewport = {

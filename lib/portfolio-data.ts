@@ -6,12 +6,12 @@ export const profile = {
   name: 'Eduardo Bauer',
   role: 'Desenvolvedor Back-end',
   tagline:
-    'Desenvolvedor Back-End. Gosto de resolver problemas na camada que ninguém vê: lógica, dados e desempenho. Programo em C, Python, Delphi e Java, com conhecimento em SQL e modelagem de dados.',
+    'Gosto de resolver problemas na camada que ninguém vê: lógica, dados e desempenho.',
   location: 'Brasil',
   about: [
-    'Desenvolvedor Back-End. Gosto de resolver problemas na camada que ninguém vê: lógica, dados e desempenho.',
     'Programo em C, Python, Delphi e Java, com conhecimento em SQL e modelagem de dados.',
     'Busco escrever código limpo, otimizar processos e construir sistemas confiáveis e fáceis de manter.',
+    'Técnologia é minha paixão e sempre estou de olhos abertos para o futuro.',
   ],
 }
 
@@ -27,21 +27,22 @@ export const social = {
 
 // Linguagens / tecnologias principais. level de 0 a 100.
 export const skills = [
-  { name: 'C', level: 85, category: 'Linguagem' },
-  { name: 'Python', level: 90, category: 'Linguagem' },
-  { name: 'Delphi', level: 80, category: 'Linguagem' },
-  { name: 'Java', level: 82, category: 'Linguagem' },
-  { name: 'SQL', level: 85, category: 'Banco de Dados' },
+  { name: 'C'},
+  { name: 'Python'},
+  { name: 'Java'},
+  { name: 'SQL'},
+  { name: 'Git'},
+  { name: 'GitHub'},
+  { name: 'Delphi'},
 ]
 
 // Habilidades complementares (tags simples).
 export const otherSkills = [
-  'Modelagem de dados',
-  'APIs REST',
-  'Git & GitHub',
-  'Estruturas de dados',
-  'Algoritmos',
-  'Programacao orientada a objetos',
+  'Comunicação',
+  'Curiosidade e aprendizagem contínua',
+  'Capacidade de organização',
+  'Trabalho em Equipe',
+  'Adaptabilidade'
 ]
 
 // ============================================================================
