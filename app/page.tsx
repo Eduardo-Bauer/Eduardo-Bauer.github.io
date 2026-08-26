@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { SocialLinks } from '@/components/social-links'
 import { TerminalWindow } from '@/components/terminal-window'
@@ -96,15 +97,29 @@ export default function HomePage() {
             ver todas →
           </Link>
         </div>
-        <ul className="mt-6 flex flex-wrap gap-3">
-          {skills.map((s) => (
-            <li
-              key={s.name}
-              className="rounded-md border border-border bg-card px-4 py-2 font-mono text-sm"
-            >
-              {s.name}
-            </li>
-          ))}
+        <ul className="mt-6 flex flex-wrap gap-4">
+          {skills.slice(0, 3).map((s) => {
+            // Mesma lógica da HabilidadesPage
+            const iconFileName = s.name.toLowerCase().replace(/\s+/g, '') + '.svg';
+            const iconPath = `/icons/${iconFileName}`;
+
+            return (
+              <li
+                key={s.name}
+                className="flex items-center gap-3 rounded-md border border-border bg-card px-4 py-2 font-mono text-sm"
+              >
+                <div className="relative h-5 w-5">
+                  <Image 
+                    src={iconPath} 
+                    alt={`Ícone do ${s.name}`}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <span>{s.name}</span>
+              </li>
+            );
+          })}
         </ul>
       </section>
     </main>
